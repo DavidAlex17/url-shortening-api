@@ -1,0 +1,86 @@
+.header__container {
+  position: fixed;
+  width: 100%;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5em 1.5em;
+
+  &__logo {
+    margin-top: 0.7rem;
+    width: 100%;
+  }
+}
+
+.nav__button {
+  z-index: 1;
+  width: 3rem;
+}
+
+.nav__lines {
+  width: 30px;
+
+  &--line {
+    background-color: $grayish-violet;
+    display: block;
+    height: 4px;
+    width: 100%;
+    margin: 0.5rem 0rem;
+  }
+}
+
+.nav__menu {
+  position: fixed;
+  inset: 80px 25px 40px; /* top left/right bottom */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: $dark-violet;
+  border-radius: 1rem;
+  transition: transform 0.5s;
+  transform: translateY(-150%);
+  padding: 2rem 3em; /* top/bottom left/right */
+
+  li {
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: .5em;
+    list-style: none;
+    text-align: center;
+  }
+
+  li:nth-child(6) {
+    padding: .5em;
+    background-color: $cyan;
+    border-radius: 3rem;
+  }
+
+  hr {
+    display: block;
+    border: 0;
+    border-top: 1px solid $grayish-violet;
+    margin: 1em 0;
+  }
+
+  &--link {
+    display: inline;
+    text-decoration: none;
+    color: $white-background;
+  }
+
+  &--link:hover {
+    color: blueviolet;
+  }
+}
+
+// JS CLASSES
+.showMenu {
+  transform: translateY(0);
+}
+
+.menuClose {
+  display: none;
+}
