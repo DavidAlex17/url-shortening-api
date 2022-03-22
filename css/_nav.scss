@@ -1,6 +1,7 @@
 .header__container {
   position: fixed;
   width: 100%;
+  z-index: 5;
 }
 
 .nav__container {
@@ -9,15 +10,15 @@
   align-items: center;
   padding: 2.5em 1.5em;
 
-  &__logo {
+  &--logo {
     margin-top: 0.7rem;
     width: 100%;
   }
-}
 
-.nav__button {
-  z-index: 1;
-  width: 3rem;
+  &--button {
+    width: 3rem;
+    z-index: 4;
+  }
 }
 
 .nav__lines {
