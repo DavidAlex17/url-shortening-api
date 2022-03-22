@@ -1,5 +1,5 @@
 const navMenu = document.querySelector(".nav__menu");
-const navButton = document.querySelector(".nav__button");
+const navButton = document.querySelector(".nav__container--button");
 const navLinks = document.querySelectorAll(".nav--link");
 const navMenuClose = document.querySelector(".menuClose");
 const navMenuOpen = document.querySelector(".menuOpen");
