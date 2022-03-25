@@ -1,0 +1,56 @@
+/* FOOTER CONTENT */
+
+.footer {
+  background: $dark-violet url("/images/bg-boost-mobile.svg") no-repeat;
+  color: $white-background;
+  text-align: center;
+}
+
+.footer__aside {
+  padding: 4em 0;
+
+  h1 {
+    font-size: clamp(2.8em, 2.8vw, 3em);
+  }
+
+  button {
+    margin: 1rem;
+    font-size: 2em;
+    font-weight: 700;
+    width: 20rem;
+    padding: 0.3em;
+    border: 0;
+    border-radius: 1.5em;
+    background-color: $cyan;
+    color: $white-background;
+  }
+}
+
+.panel__social img {
+  padding: 2em 1em;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: $very-dark-violet;
+  padding: 5em 0;
+
+  &__image {
+    color: $white-background;
+  }
+
+  li {
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 0.5em;
+    list-style: none;
+    text-align: center;
+    color: $gray;
+  }
+
+  li:nth-child(4n + 1):not(:last-child) {
+    color: $white-background;
+  }
+}
