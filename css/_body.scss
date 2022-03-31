@@ -44,21 +44,64 @@
   }
 }
 
+
 /* SHORTEN LINK CONTENT */
 .shorten__container {
   text-align: center;
-  background-color: $dark-violet;
+  background: right top $dark-violet url("/images/bg-shorten-mobile.svg") no-repeat;
   padding: 1em;
   color: $white-background;
+  width: 90%;
+  margin: auto;
+  position: relative;
+  top: 68px;
+  z-index: 4;
+  padding: 1.5em;
+  border-radius: .8rem;
+
+  input,
+  label {
+    display: block;
+    width: 100%;
+    border-radius: .5rem;
+  }
+
+  input {
+    margin-bottom: 1.5rem;
+    color: $gray;
+    padding: 1em;
+    font-weight: 600;
+    border: none;
+    
+  }
+
+  label {
+    padding: .8em;
+    background-color: $cyan;
+    font-size: 1.5em;
+    font-weight: 700;
+  }
 }
 
+
 /* CHART CONTENT */
-.section__container {
+.section {
   position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
   background-color: $gray-background;
+
+  &__heading {
+    margin-top: 14rem;
+    font-size: clamp(2.8em, 2.8vw, 3em);
+  }
+
+  &__paragraph {
+    font-size: 1.8rem;
+    color: $grayish-violet;
+    padding: 1em;
+  }
 }
 
 .chart__container {
@@ -82,17 +125,17 @@
   &--two,
   &--three  {
     background-color: $white-background;
-    padding: 1em 3em 3em; /* top | horizontal | bottom */
+    padding: 0 3em 3em; /* top | horizontal | bottom */
     margin: 4rem 2rem; /* Vertical | horizontal  */
     border-radius: .5rem;
   }
-
+  
   img {
-    position: relative;
-    top: -50px;
-    background-color: $dark-violet;
     border-radius: 50%;
+    background-color: $dark-violet;
+    position: relative;
     padding: 2em;
+    top: -40px;
   }
 
   h1 {
